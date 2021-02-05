@@ -1,4 +1,4 @@
-# 获取设备平台 AirPods、Apple TV、Apple Watch、HomePod、iPad、iPad Air、iPad Pro、iPad mini、iPhone、iPod touch
+# 获取设备 AirPods、Apple TV、Apple Watch、HomePod、iPad、iPad Air、iPad Pro、iPad mini、iPhone、iPod touch的型号
 
 ```
 + (NSString *)devicePlatForm{
