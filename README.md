@@ -1,4 +1,5 @@
 # 获取设备 AirPods、Apple TV、Apple Watch、HomePod、iPad、iPad Air、iPad Pro、iPad mini、iPhone、iPod touch的型号
+### [设备Mode](https://www.theiphonewiki.com/wiki/Models)
 
 ```
 + (NSString *)devicePlatForm{
@@ -12,6 +13,7 @@
     if ([platform isEqualToString:@"AirPods1,1"]) return @"AirPods (1st generation)";
     if ([platform isEqualToString:@"AirPods2,1"]) return @"AirPods (2nd generation)";
     if ([platform isEqualToString:@"iProd8,1"])   return @"AirPods Pro";
+    if ([platform isEqualToString:@"iProd8,6"])   return @"AirPods Max";
     
     /// Apple TV
     if ([platform isEqualToString:@"AppleTV1,1"]) return @"Apple TV (1st generation)";
@@ -20,6 +22,7 @@
     if ([platform isEqualToString:@"AppleTV3,2"]) return @"Apple TV (3rd generation)";
     if ([platform isEqualToString:@"AppleTV5,3"]) return @"Apple TV (4th generation)";
     if ([platform isEqualToString:@"AppleTV6,2"]) return @"Apple TV 4K";
+    if ([platform isEqualToString:@"AppleTV11,1"]) return @"Apple TV 4K (2nd generation)";
     
     /// Apple Watch
     if ([platform isEqualToString:@"Watch1,1"]) return @"Apple Watch (1st generation)";
@@ -132,6 +135,16 @@
     if ([platform isEqualToString:@"iPad8,11"]) return @"iPad Pro (12.9-inch) (4th generation)";
     if ([platform isEqualToString:@"iPad8,12"]) return @"iPad Pro (12.9-inch) (4th generation)";
     
+    if ([platform isEqualToString:@"iPad13,4"]) return @"iPad Pro (11-inch) (3rd generation)";
+    if ([platform isEqualToString:@"iPad13,5"]) return @"iPad Pro (11-inch) (3rd generation)";
+    if ([platform isEqualToString:@"iPad13,6"]) return @"iPad Pro (11-inch) (3rd generation)";
+    if ([platform isEqualToString:@"iPad13,7"]) return @"iPad Pro (11-inch) (3rd generation)";
+    
+    if ([platform isEqualToString:@"iPad13,8"]) return @"iPad Pro (12.9-inch) (5th generation)";
+    if ([platform isEqualToString:@"iPad13,9"]) return @"iPad Pro (12.9-inch) (5th generation)";
+    if ([platform isEqualToString:@"iPad13,10"]) return @"iPad Pro (12.9-inch) (5th generation)";
+    if ([platform isEqualToString:@"iPad13,11"]) return @"iPad Pro (12.9-inch) (5th generation)";
+    
     /// iPad mini
     if ([platform isEqualToString:@"iPad2,5"]) return @"iPad mini";
     if ([platform isEqualToString:@"iPad2,6"]) return @"iPad mini";
@@ -241,4 +254,5 @@
     
     return platform;
 }
+
 ```
