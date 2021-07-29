@@ -1,5 +1,5 @@
 # 获取设备 AirPods、Apple TV、Apple Watch、HomePod、iPad、iPad Air、iPad Pro、iPad mini、iPhone、iPod touch的型号
-### [设备Mode](https://www.theiphonewiki.com/wiki/Models)
+### [所有设备信息](https://www.theiphonewiki.com/wiki/Models)
 
 ```
 + (NSString *)devicePlatForm{
