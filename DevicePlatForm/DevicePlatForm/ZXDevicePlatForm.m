@@ -20,9 +20,14 @@
     
     /// AirPods
     if ([platform isEqualToString:@"AirPods1,1"]) return @"AirPods (1st generation)";
-    if ([platform isEqualToString:@"AirPods2,1"]) return @"AirPods (2nd generation)";
-    if ([platform isEqualToString:@"iProd8,1"])   return @"AirPods Pro";
-    if ([platform isEqualToString:@"iProd8,6"])   return @"AirPods Max";
+    if ([platform isEqualToString:@"AirPods1,2"] || [platform isEqualToString:@"AirPods2,1"]) return @"AirPods (2nd generation)";
+    if ([platform isEqualToString:@"AirPods1,3"] || [platform isEqualToString:@"Audio2,1"]) return @"AirPods (3rd generation)";
+    if ([platform isEqualToString:@"AirPods2,2"] || [platform isEqualToString:@"AirPodsPro1,1"] || [platform isEqualToString:@"iProd8,1"])   return @"AirPods Pro";
+    if ([platform isEqualToString:@"AirPodsPro1,2"])   return @"AirPods Pro (2nd generation)";
+    if ([platform isEqualToString:@"AirPodsMax1,1"] || [platform isEqualToString:@"iProd8,6"])   return @"AirPods Max";
+    
+    /// AirTag
+    if ([platform isEqualToString:@"AirTag1,1"]) return @"AirTag";
     
     /// Apple TV
     if ([platform isEqualToString:@"AppleTV1,1"]) return @"Apple TV (1st generation)";
@@ -242,6 +247,24 @@
     if ([platform isEqualToString:@"iPhone13,3"]) return @"iPhone 12 Pro";
     
     if ([platform isEqualToString:@"iPhone13,4"]) return @"iPhone 12 Pro Max";
+    
+    if ([platform isEqualToString:@"iPhone14,4"]) return @"iPhone 13 mini";
+    
+    if ([platform isEqualToString:@"iPhone14,5"]) return @"iPhone 13";
+    
+    if ([platform isEqualToString:@"iPhone14,2"]) return @"iPhone 13 Pro";
+    
+    if ([platform isEqualToString:@"iPhone14,3"]) return @"iPhone 13 Pro Max";
+    
+    if ([platform isEqualToString:@"iPhone14,6"]) return @"iPhone SE (3rd generation)";
+    
+    if ([platform isEqualToString:@"iPhone14,7"]) return @"iPhone 14";
+    
+    if ([platform isEqualToString:@"iPhone14,8"]) return @"iPhone 14 Plus";
+    
+    if ([platform isEqualToString:@"iPhone15,2"]) return @"iPhone 14 Pro";
+    
+    if ([platform isEqualToString:@"iPhone15,3"]) return @"iPhone 14 Pro Max";
     
     /// iPod touch
     if ([platform isEqualToString:@"iPod1,1"]) return @"iPod touch";
